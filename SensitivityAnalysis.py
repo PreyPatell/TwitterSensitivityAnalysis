@@ -80,13 +80,13 @@ for k, v in mostPositive.items():
 negativeConfidenceCount = dict(Counter(negativeConfidence))
 positiveConfidenceCount = dict(Counter(positiveConfidence))
 
-
+#provide values to identified code
 nConfidence = list(negativeConfidenceCount.keys())
 nNumber = list(negativeConfidenceCount.values())
-
 pConfidence = list(positiveConfidenceCount.keys())
 pNumber = list(positiveConfidenceCount.values())
 
+#graph with matplotlib for visualization
 pltNegative.bar(nConfidence, nNumber, color = "yellow", width = 0.1)
 
 pltNegative.ylabel("Number of Negative Tweets")
